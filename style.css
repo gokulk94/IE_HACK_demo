@@ -1,0 +1,47 @@
+.square {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+}
+
+
+.square:not(*:root) {
+    background-color: green;
+}
+
+
+/*Mozilla >=21*/
+_::-moz-range-track, body:last-child .square {
+    background-color: blue;
+}
+
+_:-moz-tree-row(hover), .square {
+
+}
+
+/*IE 6 to 8*/
+.square {
+    background-color: black\9;
+}
+
+/*IE <=7*/
+@media screen\9 {
+    .square {
+        background-color: grey;
+    }
+}
+
+
+ /*Internet Explorer ≥ 9, Safari 4, Android ≥ 2.3*/
+@media screen and (min-width:0\0) {
+    .square {
+        border-radius: 30px;
+    }
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    .square {
+        width: 100px;
+        height: 100px;
+    }
+}
