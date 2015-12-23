@@ -39,6 +39,8 @@ _:-moz-tree-row(hover), .square {
     }
 }
 
+
+/*IE 10 and above*/
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
     .square {
         width: 100px;
